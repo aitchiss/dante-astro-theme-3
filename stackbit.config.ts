@@ -17,5 +17,5 @@ export default defineStackbitConfig({
           "passthrough": ["/astro/**"],
         },
       },
-    }
-})
+    })
+
