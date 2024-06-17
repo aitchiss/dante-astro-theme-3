@@ -14,7 +14,6 @@ export default defineStackbitConfig({
           "logPatterns": {
             "up": ["ready in", "watching for file changes"],
           },
-          "passthrough": ["/astro/**"],
         },
       },
     })
