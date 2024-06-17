@@ -7,5 +7,15 @@ export default defineStackbitConfig({
     "nodeVersion": "18",
     "ssgName": "custom",
     "contentSources": [],
-    "postInstallCommand": "npm i --no-save @stackbit/types"
+    "postInstallCommand": "npm i --no-save @stackbit/types",
+    "experimental": {
+        "ssg": {
+          "name": "astro",
+          "logPatterns": {
+            "up": ["ready in", "watching for file changes"],
+          },
+          "passthrough": ["/astro/**"],
+        },
+      },
+    }
 })
